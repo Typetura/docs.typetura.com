@@ -1,11 +1,17 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: Typetura Reference
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+To style using Typetura there are three main areas that would be helpful to understand: [containers](#containers), [Typetura elements](#typetura-elements), and [styles](#styles).
 
-## Further reading
+## Containers
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+Coming soon
+
+## Typetura elements
+
+Coming soon
+
+## Styles
+
+Coming soon
