@@ -29,7 +29,7 @@
   --sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
   --sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
   --sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
-  --sl-color-accent-low: hsl(224, 54%, 20%);
+  --sl-color-accent-low: hsl(170, 54%, 20%);
   --sl-color-accent: #129780;
   --sl-color-accent-high: #ED8600;
   --sl-color-text: var(--sl-color-gray-2);
@@ -131,9 +131,9 @@
   --sl-color-red-high: hsl(var(--sl-hue-red), 80%, 30%);
   --sl-color-red: hsl(var(--sl-hue-red), 90%, 60%);
   --sl-color-red-low: hsl(var(--sl-hue-red), 80%, 90%);
-  --sl-color-accent-high: hsl(234, 80%, 30%);
-  --sl-color-accent: #129780;
-  --sl-color-accent-low: hsl(234, 88%, 90%);
+  --sl-color-accent-high: hsl(170, 80%, 30%);
+  --sl-color-accent: hsl(170, 79%, 33%);
+  --sl-color-accent-low: hsl(170, 88%, 90%);
   --sl-color-text-accent: var(--sl-color-accent);
   --sl-color-text-invert: var(--sl-color-black);
   --sl-color-bg-nav: var(--sl-color-gray-7);
@@ -149,6 +149,22 @@
   --sl-shadow-lg: 0px 25px 7px rgba(0, 0, 0, 0.01), 0px 16px 6px hsla(0, 0%, 0%, 0.03), 0px 9px 5px hsla(223, 13%, 10%, 0.08), 0px 4px 4px hsla(0, 0%, 0%, 0.16), 0px 4px 2px hsla(0, 0%, 0%, 0.04);
 }
 
+*:focus-visible {
+  outline-color: #ED8600 !important;
+}
+
+.sl-flex.actions {
+  gap: 0.5rem;
+}
+
+.action.minimal {
+  padding-inline: 1rem;
+}
+
+html {
+  font-size: 125%;
+}
+
 body {
   background-color: #08201d;
 }
@@ -156,6 +172,9 @@ body {
   background-color: #fff3f0;
 }
 
+.hero:where(.astro-jbfsktt5) {
+  padding-block: 2rem;
+}
 
 .tagline {
   text-wrap: balance;

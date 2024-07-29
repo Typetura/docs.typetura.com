@@ -19,7 +19,6 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					items: [
-						{ label: 'Why Typetura.css?', slug: 'guides/why-typetura' },
 						{ label: 'Hello world!', slug: 'guides/hello-world' },
 					],
 				},
