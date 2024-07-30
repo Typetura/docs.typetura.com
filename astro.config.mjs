@@ -22,6 +22,7 @@ export default defineConfig({
 						{ label: 'Hello world!', slug: 'guides/hello-world' },
 						{ label: 'Root text', slug: 'guides/root-text' },
 						{ label: 'Headings', slug: 'guides/headings' },
+						{ label: 'Type Scale', slug: 'guides/type-scale' },
 					],
 				},
 				{

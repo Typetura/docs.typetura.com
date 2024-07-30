@@ -2,7 +2,7 @@
 title: Patents
 ---
 
-Use of this software does not grant licence to any patents held by Typetura LLC. For more information, please contact [Typetura LLC](https://typetura.com/patents/) at [info@typetura.com](mailto:info@typetura.com). These patents describe the distribution of typographc systems at scale as well as how design software might be used to create and manage dynamic typographic systems. These patents protect our business usecases for this software and are not intended to restrict the use of the software itself on projects you own, operate, control, or are a part of.
+Use of this software does not grant license to any patents held by Typetura LLC. For more information, please contact [Typetura LLC](https://typetura.com/patents/) at [info@typetura.com](mailto:info@typetura.com). These patents describe the distribution of typographic systems at scale as well as how design software might be used to create and manage dynamic typographic systems. These patents protect our business use cases for this software and are not intended to restrict the use of the software itself on projects you own, operate, control, or are a part of.
 
 As an example, if `fonts.bigcompany.com` is interested in distributing typographic systems alongside their fonts, they would need to license our patents. If `Big Design Software` decided to create an interface keyframing out text scaling in their app, they would need to license the patents. If `yourcompany.com` is using Typetura to manage their own internal typographic system, they would likely not need to license our patents.
 

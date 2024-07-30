@@ -9,7 +9,7 @@ Let’s start with some HTML on a page:
 
 ```html
 <article>
-  <h1>Hello world!</h1>
+  <h1 class="heading">My headline</h1>
 </article>
 ```
 
@@ -23,27 +23,31 @@ Then, let’s add [`typetura.css`](https://github.com/Typetura/Typetura/releases
 </head>
 ```
 
-We want to change the size of the `h1` [element](/reference/elements). Let’s attach Typetura’s behavior to it by adding the class `tt`.
+We want to style the `.heading` [element](/reference/elements). Let’s attach Typetura’s behavior to it by adding the class `tt`.
 
 ```html
 <article>
-  <h1 class="tt">Hello world!</h1>
+  <h1 class="heading tt">Hello world!</h1>
 </article>
 ```
 
+## Defining a container
+
+Let’s say we want to have the headline scale with the [container](reference/containers) it is in. We can define this by either adding a `cq` class to `<article>` or by adding `article{ container-type: inline-size; }` to our CSS.
+
 ## Your styles
 
-Now we can style this using [CSS keyframe animations](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes).
+Now we can style this using [CSS keyframe animations](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes). We’ll start by creating an animation and attaching that to our heading.
 
 ```css
-h1 {
-  animation-name: h1;
+.heading {
+  animation-name: heading;
 }
-@keyframes h1 {
-  0% {
-    font-size: 1rem;
+@keyframes heading {
+  from {
+    font-size: 1.5rem;
   }
-  100% {
+  to {
     font-size: 5rem;
   }
 }
@@ -51,33 +55,37 @@ h1 {
 
 ## Additional styling
 
-You did it! You wrote your first Typetura styles. You may want to adjust the start and end position, as well as the easing curve. See the [Typetura style reference](/reference/styles) for more information.
+You did it! Now let’s add more styles to both the keyframes and our regular ruleset for the heading. See the [Typetura style reference](/reference/styles) for more information.
 
 ```css
-h1 {
-  animation-name: h1;
-	/* Scaling curve */
-  animation-timing-function: ease-in-out;
-	/* Breakpoint for “from” keyframe */
-  --from: 10rem;
-	/* Breakpoint for “to” keyframe */
+.heading {
+  animation-name: heading;
+  animation-timing-function: ease-in;
+	margin: 0;
+	margin-block-end: 0.2em;
+	font-stretch: 80%;
+	line-height: 1;
   --to: 60rem;
 }
-@keyframes h1 {
+@keyframes heading {
   from {
-    font-size: 1rem;
-		line-height: 1.2
+    font-size: 1.5rem;
+		line-height: 1.2;
+		font-stretch: 50%;
+		font-weight: 700;
   }
   to {
     font-size: 5rem;
 		line-height: 1;
+		font-stretch: 100%;
+		font-weight: 400;
   }
 }
 ```
 
-<p class="codepen" data-height="600" data-default-tab="css,result" data-slug-hash="mdZVRVb" data-pen-title="Typetura Hello World Tutorial" data-editable="true" data-user="scottkellum" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/scottkellum/pen/mdZVRVb">
-  Typetura Hello World Tutorial</a> by Scott Kellum (<a href="https://codepen.io/scottkellum">@scottkellum</a>)
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="QWXdZYr" data-pen-title="Typetura Headings Tutorial" data-editable="true" data-user="scottkellum" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/scottkellum/pen/QWXdZYr">
+  Typetura Headings Tutorial</a> by Scott Kellum (<a href="https://codepen.io/scottkellum">@scottkellum</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
