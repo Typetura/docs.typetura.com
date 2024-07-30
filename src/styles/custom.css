@@ -149,6 +149,7 @@
   --sl-shadow-lg: 0px 25px 7px rgba(0, 0, 0, 0.01), 0px 16px 6px hsla(0, 0%, 0%, 0.03), 0px 9px 5px hsla(223, 13%, 10%, 0.08), 0px 4px 4px hsla(0, 0%, 0%, 0.16), 0px 4px 2px hsla(0, 0%, 0%, 0.04);
 }
 
+
 *:focus-visible {
   outline-color: #ED8600 !important;
 }
@@ -163,6 +164,7 @@
 
 html {
   font-size: 125%;
+  font-size-adjust: from-font;
 }
 
 body {
@@ -197,4 +199,15 @@ body {
 .expressive-code pre {
   border-radius: 0.33rem !important;
   background-color: var(--sl-color-black) !important;
+}
+.sl-markdown-content table * {
+  font-size: 0.85rem !important;
+}
+
+.sl-markdown-content table code {
+  white-space: nowrap;
+}
+
+.sl-markdown-content table td:nth-of-type(2) {
+  min-width: 16rem;
 }

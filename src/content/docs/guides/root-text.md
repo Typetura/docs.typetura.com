@@ -22,7 +22,7 @@ Additionally, now is a good time to add viewport meta tags. You’ve probably us
 
 ## Styling
 
-We can skip defining `html` as a Typetura [element](reference/elements), because it already is one by default. We can get straight to styling.
+We can skip defining `html` as a Typetura [element](/reference/elements), because it already is one by default. We can get straight to styling.
 
 To avoid reflow issues ([see accessibility statement](reference/accessibility)) we are going to do something a little unconventional by starting our font size at 0%. This is because at a viewport width of `0px`, our text would have to be `0%` to fit. We want our text to scale up to a more reasonable `125%`.
 

@@ -33,7 +33,7 @@ We want to style the `.heading` [element](/reference/elements). Let’s attach T
 
 ## Defining a container
 
-Let’s say we want to have the headline scale with the [container](reference/containers) it is in. We can define this by either adding a `cq` class to `<article>` or by adding `article{ container-type: inline-size; }` to our CSS.
+Let’s say we want to have the headline scale with the [container](/reference/containers) it is in. We can define this by either adding a `cq` class to `<article>` or by adding `article{ container-type: inline-size; }` to our CSS.
 
 ## Your styles
 
