@@ -1,6 +1,6 @@
 ---
-title: Hello world
-description: Get up and running quickly.
+title: Headings
+description: Best practices for styling your headings.
 ---
 
 ## Your content

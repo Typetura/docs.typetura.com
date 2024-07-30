@@ -20,11 +20,19 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						{ label: 'Hello world!', slug: 'guides/hello-world' },
+						{ label: 'Root text', slug: 'guides/root-text' },
+						{ label: 'Headings', slug: 'guides/headings' },
 					],
 				},
 				{
 					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					items: [
+						{ label: 'Overview', slug: 'reference' },
+						{ label: 'Containers', slug: 'reference/containers' },
+						{ label: 'Elements', slug: 'reference/elements' },
+						{ label: 'Styles', slug: 'reference/styles' },
+						{ label: 'Accessibility', slug: 'reference/accessibility' },
+					],
 				},
 				{
 					label: 'Company and Legal',
