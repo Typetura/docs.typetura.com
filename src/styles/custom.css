@@ -131,8 +131,8 @@
   --sl-color-red-high: hsl(var(--sl-hue-red), 80%, 30%);
   --sl-color-red: hsl(var(--sl-hue-red), 90%, 60%);
   --sl-color-red-low: hsl(var(--sl-hue-red), 80%, 90%);
-  --sl-color-accent-high: hsl(170, 80%, 30%);
-  --sl-color-accent: hsl(170, 79%, 33%);
+  --sl-color-accent-high: hsl(170, 80%, 24%);
+  --sl-color-accent: hsl(170, 79%, 20%);
   --sl-color-accent-low: hsl(170, 88%, 90%);
   --sl-color-text-accent: var(--sl-color-accent);
   --sl-color-text-invert: var(--sl-color-black);
